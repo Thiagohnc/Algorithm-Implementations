@@ -1,6 +1,6 @@
-/**	@Author: Thiago Henrique Neves Coelho
-  *	Date: 20/04/2017
-  * Algorithm: Matrix Exponentiation by Squaring
+/**  @Author: Thiago Henrique Neves Coelho
+  *  Date: 20/04/2017
+  *  Algorithm: Matrix Exponentiation by Squaring
   */
 
 #include <cstdio>
