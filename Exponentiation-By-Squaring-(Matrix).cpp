@@ -39,7 +39,7 @@ ll **multiplyMatrix(ll **matrix, ll **matrix2, int row, int col, int _row, int _
 	return aux;
 }
  
-ll **exponentiate(ll **matrix, int n, int exp) {
+ll **power(ll **matrix, int n, int pw) {
 	ll **aux, **temp;
  
 	aux = (ll **) malloc(sizeof(ll*)*n);
@@ -54,9 +54,9 @@ ll **exponentiate(ll **matrix, int n, int exp) {
 	/* matrix is now matrix^0 (Identity) */
 	/* aux stores the matrix to exponentiate itself in the loop */
 	
-	while(exp > 0) {
+	while(pw > 0) {
 		/* Square-And-Multiply Algorithm applied to matrices */
-		if(exp&1) {
+		if(pw&1) {
 			temp = matrix;
 			matrix = multiplyMatrix(matrix, aux, n, n, n, n); // Multiply
 			clearMatrix(temp, n);
@@ -64,7 +64,7 @@ ll **exponentiate(ll **matrix, int n, int exp) {
 		temp = aux;
 		aux = multiplyMatrix(aux, aux, n, n, n, n); // Square
 		clearMatrix(temp, n);
-		exp /= 2;
+		pw /= 2;
 	}
 	clearMatrix(aux, n);
 	
