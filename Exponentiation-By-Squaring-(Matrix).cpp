@@ -13,7 +13,7 @@ void clearMatrix(ll **matrix, int row) {
 	for(int i = 0; i < row; i++) free(matrix[i]);
 	free(matrix);
 }
- 
+
 ll **multiplyMatrix(ll **matrix, ll **matrix2, int row, int col, int _row, int _col) {
 	/* Multiply matrix by matrix2 */
 	/* The sizes are: matrix(row x col) and matrix2(_row x _col) */
