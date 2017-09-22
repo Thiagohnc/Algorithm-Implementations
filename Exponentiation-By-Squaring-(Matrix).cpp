@@ -1,5 +1,5 @@
 /**  @Author: Thiago Henrique Neves Coelho
-  *  Date: 20/04/2017
+  *  Date: 04/20/2017
   *  Algorithm: Matrix Exponentiation by Squaring
   */
 
